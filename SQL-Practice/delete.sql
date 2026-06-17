@@ -1,4 +1,4 @@
 USE employee_db;
 
 DELETE FROM employee
-WHERE eid = 103;
+WHERE eid = 103; 
