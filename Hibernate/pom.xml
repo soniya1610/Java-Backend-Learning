@@ -6,9 +6,7 @@
     <!-- Maven Model Version -->
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- =========================
-         Project Information
-         ========================= -->
+    <!-- ========================= Project Information ========================= -->
     <groupId>com.soniya</groupId>
     <artifactId>hbApp2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -20,9 +18,7 @@
     <!-- Optional Project URL -->
     <url>http://maven.apache.org</url>
 
-    <!-- =========================
-         Project Properties
-         ========================= -->
+    <!-- ========================= Project Properties ========================= -->
     <properties>
         <!-- Source file encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,13 +28,10 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <!-- =========================
-         Project Dependencies
-         ========================= -->
+    <!-- ========================= Project Dependencies ========================= -->
     <dependencies>
 
-        <!-- MySQL Connector:
-             Used to connect Java application with MySQL database -->
+        <!-- MySQL Connector:Used to connect Java application with MySQL database -->
         <dependency>
             <groupId>com.mysql</groupId>
             <artifactId>mysql-connector-j</artifactId>
@@ -46,9 +39,7 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- Hibernate ORM:
-             Provides ORM support (Object Relational Mapping)
-             to map Java objects with database tables -->
+        <!-- Hibernate ORM:Provides ORM support (Object Relational Mapping) to map Java objects with database tables -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
@@ -56,9 +47,7 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- JUnit:
-             Used for writing and running test cases
-             (Added by default in many Maven projects) -->
+        <!-- JUnit:Used for writing and running test cases(Added by default in many Maven projects) -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
