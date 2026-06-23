@@ -1,0 +1,46 @@
+<!-- // purpose of Hibernate.cfg.xml file 
+1. Database connection setup
+2. Hibernate settings
+3. SQL display
+4. Table creation strategy-->
+
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database Driver -->
+        <property name="connection.driver_class">
+            com.mysql.cj.jdbc.Driver
+        </property>
+
+        <!-- Database URL -->
+        <property name="connection.url">
+            jdbc:mysql://localhost:3306/hbdb?createDatabaseIfNotExist=true
+        </property>
+
+        <!-- Database Credentials -->
+        <property name="connection.username">root</property>
+        <property name="connection.password">YOUR_PASSWORD</property>
+
+        <!-- SQL Dialect for MySQL -->
+        <property name="dialect">
+            org.hibernate.dialect.MySQL8Dialect
+        </property>
+
+        <!-- Create table every time application runs -->
+        <!-- <property name="hbm2ddl.auto">create</property> -->
+
+        <!-- Create table if not exists / update schema -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Show SQL queries in console -->
+        <property name="show_sql">true</property>
+
+        <!-- Format SQL queries -->
+        <property name="format_sql">true</property>
+
+    </session-factory>
+</hibernate-configuration>
